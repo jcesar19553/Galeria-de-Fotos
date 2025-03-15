@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Poppins;
+}
+body{
+    width: 100%;
+}
+.container-video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.oscurecer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:rgba(0,0,0, 0.7) ;
+}
+nav{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 600px;
+}
+nav ul{
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.logo img {
+    width: 100px;
+    height: 80px;
+}
+.outline {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+  
+  .rect {
+    stroke-dashoffset: 5;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s;
+    stroke: #ada6a6;
+  }
+  
+  .nav {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -450%);
+  }
+  
+  .container:hover .outline .rect {
+    transition: 999999s;
+    /* Must specify these values here as something *different* just so that the transition works properly */
+    stroke-dashoffset: 1;
+    stroke-dasharray: 0;
+  }
+  
+  .container {
+    position: absolute;
+    inset: 0;
+    background: rgba(197, 10, 10, 0.4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+  }
+  
+  .btn {
+    padding: 0.5em 1.5em;
+    color: #9c9c9c;
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  .btn:hover {
+    background: rgba(0, 0, 0, 0.493);
+  }
+  
+  .btn:nth-child(1):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 2 8 73.3 8 10.7;
+  }
+  
+  .btn:nth-child(2):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+  }
+  
+  .btn:nth-child(3):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+  }
+  
+  .btn:nth-child(4):hover ~ svg .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+  }
+  
+  .btn:hover ~ .outline .rect {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0 0 10 40 10 40;
+    transition: 0.5s !important;
+  }
+header {
+    border: 1px rgb(220, 7, 7) solid;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: gray;
+}
+section{
+    border: 1px black solid;
+    height: 500px;
+    width: 1000px;
+    transform: translate(-50%, 10%);
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+.cars-galery{
+    height: 500px;
+    width: 1000px;
+    border: 1px rgb(253, 253, 253) solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+.colum{
+    border: 1px white solid;
+    width: 100%;
+    height: 100%;
+}
+.one{
+    background-image: url("./img/1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.one:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.two{
+    background-image: url("./img/2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.two:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.three{
+    background-image: url("./img/3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.three:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.four{
+    background-image: url("./img/4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.four:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.five{
+    background-image: url("./img/5.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius:5px ;
+}
+.five:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+}
+.six{
+    background-image: url("./img/6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.six:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.seven{
+    background-image: url("./img/7.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.seven:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.eight{
+    background-image: url("./img/8.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.eight:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.nine{
+    background-image: url("./img/9.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.nine:hover{
+    transform: scale(2);
+    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.controls{
+    position: absolute;
+    right: 43%;
+    bottom: 20px;
+}
